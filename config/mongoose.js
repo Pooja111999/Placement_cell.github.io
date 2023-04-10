@@ -6,7 +6,7 @@
 // main().catch(error =>console.log("connection not successfull !!"));
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-const mongoDB = "mongodb://127.0.0.1/placement"; 
+const mongoDB = "mongodb+srv://new_CSV:new_CSV@cluster0.gbjrkub.mongodb.net/placement?retryWrites=true&w=majority"; 
 main().catch(err => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
